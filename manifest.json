@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "evador",
+  "description": "Lets you stop tracking from sites that add a sharing content button (currently only facebook)",
+  "version": "1.3",
+  "permissions" : [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.facebook.com/*"
+  ],
+  "background":{
+    "persistent" : true,
+    "scripts" : ["control.js"]
+  },
+  "icons": {
+    "16": "img/icon-16x16.png"
+   }
+}
